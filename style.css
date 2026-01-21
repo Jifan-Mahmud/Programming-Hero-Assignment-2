@@ -3,9 +3,9 @@
     --primary-bg: #0d0a1b;
     --card-bg: rgba(255, 255, 255, 0.05);
     --accent-gradient: linear-gradient(135deg, #ff00cc, #3333ff);
-    --neon-green: #00ff9d;
     --text-main: #ffffff;
     --text-muted: #b0b0b0;
+    --neon-green: #00ff9d;
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
@@ -40,11 +40,13 @@ body {
 
 .text-gradient {
     background: var(--accent-gradient);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: shimmer 5s linear infinite;
 }
 
-/* Header*/
+/* Header & Nav */
 header {
     padding: 20px 0;
     position: fixed;
@@ -128,7 +130,7 @@ nav {
     padding: 15px 35px;
 }
 
-/* Hero Section */
+/* Section */
 .hero {
     padding: 160px 0 100px;
     background-image: url('assets/hero-bg.png');
@@ -174,6 +176,7 @@ nav {
 .mic-icon {
     width: 100px;
     height: auto;
+    animation: float 3s ease-in-out infinite;
 }
 
 .badge {
@@ -190,6 +193,7 @@ nav {
     background: var(--neon-green);
     color: var(--primary-bg);
     box-shadow: 0 0 15px var(--neon-green);
+    animation: badgeGlow 2s infinite;
 }
 
 .hero h1 {
@@ -208,4 +212,46 @@ nav {
 .hero-actions {
     display: flex;
     gap: 20px;
+}
+
+/* All Sections */
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* About Sections */
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+
+/* Section-2 */
+.stats {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 42px;
+    color: var(--neon-green);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--text-muted);
 }
