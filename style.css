@@ -467,3 +467,42 @@ h2 {
 }
 
 
+/* Footer */
+footer {
+    padding: 80px 0 40px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #ff00cc;
+}
+
+.footer-socials img {
+    width: 20px;
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+
