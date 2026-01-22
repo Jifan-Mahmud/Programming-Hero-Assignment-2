@@ -652,8 +652,6 @@ footer {
 
     .feature-card.glass:has(.feature-info) {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
     .episodes-grid {
@@ -676,4 +674,15 @@ footer {
         gap: 20px;
         align-items: center;
     }
+}
+
+
+/* Waveform divider effect */
+.waveform-divider {
+    height: 200px;
+    background-image: url('assets/footer-bg.png');
+    /* Reusing footer wave for divider too if appropriate */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
 }
